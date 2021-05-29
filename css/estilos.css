@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, helvetica, sans-serif;
+  color: black;
+  position: relative;
+}
+
+#resumen {
+  text-align: center;
+}
+
+#icon {
+  margin: 5px;
+}
+
+.footer {
+  background-color: lightgoldenrodyellow;
+  padding-top: 100px;
+  margin-top: 50px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#barra_fija {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  opacity: 90%;
+}
+
+#inicio {
+  padding-top: 58px;
+}
+
+#imagen {
+  width: 200px;
+}
+#imagen2 {
+  width: 170px;
+}
+
+.navbar-collapse:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.logo_kfc {
+  width: 30px;
+}
+
+.buscar input {
+  width: 0px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #000;
+  background: black;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 50px;
+  transition: all 0.6s ease;
+}
+
+.btn_search {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: red;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e84118;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+
+.buscar:hover input {
+  width: 350px;
+}
+
+.buscar:hover > .btn_search {
+  background: #ccc;
+}
+
+.buscar input:focus {
+  width: 350px;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+  padding: 10px;
+}
+
+.item-title {
+  padding: 10px;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+.item-image {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+
+/* ? SHOPPING CART */
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+/* Info style*/
+
+.Tex1 {
+
+  text-align: justify;
+  
+  }
+    
+.Tex2 {
+  text-align: center;
+  
+    }
+    
+.info_col {
+    margin-top: 50px;
+    text-align: justify;
+  }
+      
+    
+  
+  
+.T1{
+    text-align: center;
+    margin-bottom: 50px;
+    
+  }
+
+.im{
+  
+  
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin-bottom: 30px;
+    
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .form-register {
+    width: 400px;
+    background: #D0862D;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px white;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid white;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: moccasin;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+/* Arrow Up 
+
+.up {
+  display: inline-block;
+  padding: 20px;
+  background: red;
+  font-size: 50%;
+  color: black;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px ;
+  right: 20px;
+  border-radius: 50%;
+
+}
+*/
+
+
+.up_container{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+}
+
+.up_button{
+  width: 0px;
+  height: 0px;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+
+.up{
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  transition: .3s;
+
+}
+
+.show{
+  z-index: 10;
+
+}
+
+.show .up_button{
+  animation: popup .3s ease-in-out;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+
+}
+
+.show span{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+  50%{
+    width: 6rem;
+    height: 6rem;
+  }
+  100%{
+    width: 5rem;
+    height: 5rem;
+  }
+}
